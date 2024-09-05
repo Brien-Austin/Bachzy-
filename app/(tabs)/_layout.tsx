@@ -24,6 +24,14 @@ export default function TabsLayout() {
             tabBarIcon: ({ color }) => <FontAwesome size={28} name="plus-square-o" color={color} />,
           }}
         />
+               <Tabs.Screen
+          name="earn"
+          options={{
+            title: 'Earn and Win',
+            headerTitleAlign : "center",
+            tabBarIcon: ({ color }) => <FontAwesome size={28} name="money" color={color} />,
+          }}
+        />
       
         <Tabs.Screen 
           name="profile"

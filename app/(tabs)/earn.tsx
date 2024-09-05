@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const CreatePost = () => {
+const EarnCash = () => {
   return (
     <View>
-      <Text>Add a Post</Text>
+      <Text className="underline">EarnCash</Text>
     </View>
   )
 }
 
-export default CreatePost
+export default EarnCash
 
 const styles = StyleSheet.create({})
