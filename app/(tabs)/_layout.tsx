@@ -1,12 +1,14 @@
 import { Tabs } from "expo-router";
 import FontAwesome from '@expo/vector-icons/FontAwesome'
 import AntDesign from '@expo/vector-icons/AntDesign'
+import { MaterialIcons } from "@expo/vector-icons";
 
 export default function TabsLayout() {
     return (
         <Tabs  
         screenOptions={{
           tabBarActiveTintColor: '#7536e5',
+          tabBarInactiveTintColor : "gray",
           tabBarIconStyle : {
             width : 28,
             height : 28
@@ -26,7 +28,7 @@ export default function TabsLayout() {
             title: 'For you',
             tabBarLabel : "Home",
             headerTitleAlign : "center",
-            tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+            tabBarIcon: ({ color }) => <MaterialIcons size={28} name="home" color={color} />,
           }}
         />
                     <Tabs.Screen
@@ -35,7 +37,7 @@ export default function TabsLayout() {
             title: 'Rooms and PG',
             tabBarLabel : "Rooms",
             headerTitleAlign : "center",
-            tabBarIcon: ({ color }) => <FontAwesome size={28} name="hotel" color={color} />,
+            tabBarIcon: ({ color }) => <MaterialIcons size={28} name="hotel" color={color} />,
           }}
         />
         <Tabs.Screen
